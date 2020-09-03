@@ -1,0 +1,34 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>MainLoop.js demo</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Display full-screen in standalone mode -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="stylesheet" href="./style.css" type="text/css">
+
+</head>
+<body>
+    
+    <div id="canvas-container">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div id="fpspicker">
+        <label for="fps">Maximum FPS:</label>
+        <input type="range" id="fps" min=1 max=60 step=1 value=60>
+        <span id="fpsvalue">60</span>
+    </div>
+
+    <div id="fpscounter">0 FPS</div>
+
+    <script src="node_modules/mainloop.js/build/mainloop.min.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

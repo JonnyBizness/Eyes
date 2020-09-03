@@ -1,0 +1,16 @@
+{
+  "name": "mainloop-test",
+  "version": "1.0.0",
+  "description": "Test out the main game loop",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "game": "http-server"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mainloop.js": "^1.0.4"
+  }
+}
