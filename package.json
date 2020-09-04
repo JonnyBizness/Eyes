@@ -1,16 +1,22 @@
 {
-  "name": "mainloop-test",
-  "version": "1.0.0",
-  "description": "Test out the main game loop",
-  "main": "index.js",
-  "scripts": {
-    "test": "test",
-    "game": "http-server"
-  },
-  "type": "module",
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "mainloop.js": "^1.0.4"
-  }
+    "name": "mainloop-test",
+    "version": "1.0.0",
+    "description": "Test out the main game loop",
+    "main": "index.js",
+    "scripts": {
+        "game": "http-server",
+        "webpackBuild": "webpack --config webpack.config.js -d",
+        "webpackWatch": "webpack --config webpack.config.js -d -w"
+    },
+    "type": "module",
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "mainloop.js": "^1.0.4",
+        "@babel/core": "^7.11.6",
+        "@babel/preset-env": "^7.11.5",
+        "babel-loader": "^8.1.0",
+        "webpack": "^4.44.1"
+    }
 }

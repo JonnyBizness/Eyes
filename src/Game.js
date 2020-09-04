@@ -26,7 +26,8 @@ export class Game {
     draw = (interpolationPercentage) => {
         //clear all
         canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
-        
+        //console.log(this);
+
         this.eyes.forEach(eye => {
             eye.draw(interpolationPercentage);
         });

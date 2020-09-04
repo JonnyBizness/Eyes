@@ -1,4 +1,6 @@
-import { Game } from "./src/Game.js";
+
+const MainLoop  = require ('mainloop.js/build/mainloop.min.js')
+import { Game } from "./Game.js";
 
 
 function end(fps, panic) {
