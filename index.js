@@ -17,13 +17,14 @@ const fpsCounter = document.getElementById('fpscounter');
 const fpsValue = document.getElementById('fpsvalue');
 
 //hard code canvas width and height
-canvas.width = 576;//648;//320;
-canvas.height = 1024;//1152;//568;
-
-
+canvas.width = 320;
+canvas.height = 568;
 
 const game = new Game();
 
+canvas.addEventListener('mousemove', function(evt) {
+    game.getMousePos(canvas.getBoundingClientRect(), evt);
+}, false);
 
 // Start the main loop.
 //call game.update directly? 
@@ -38,5 +39,3 @@ document.getElementById('fps').addEventListener('change', function() {
     var val = parseInt(this.value, 10);
     MainLoop.setMaxAllowedFPS(val === 60 ? Infinity : val);
 });
-
-
